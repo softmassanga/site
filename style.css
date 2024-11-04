@@ -1,0 +1,631 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #444;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.testimonials, .partners {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #c21010;
+}
+
+
+/* Estilo para a Imagem de Destaque */
+.highlight-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.highlight-image img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Estilo para a Seção de Descrição do Administrador */
+.admin-description {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+}
+
+.admin-description h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.admin-description p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* Estilo para o Header */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333; /* Ajuste conforme seu design */
+}
+
+/* Estilo para a Logo */
+.logo-container {
+    max-width: 300px; /* Tamanho máximo da logo, ajuste se necessário */
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #fdfbfb;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Garante que o site seja exibido corretamente em todas as telas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define o estilo padrão do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuração para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Exemplo de ajuste para o layout do menu de navegação */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajuste de imagens para caberem na largura da tela */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajuste para containers principais */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Estilos específicos para botões */
+    .button {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+/* Configuração para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Layout para tablets */
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+}
+
+/* Configuração para desktops */
+@media (min-width: 1025px) {
+    /* Estilo do container principal */
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c55fb8c2;
+    color: #fcf4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centralizar apenas o container FAQ */
+.faq-container {
+    max-width: 800px;
+    background-color: #6d5050;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* Cabeçalho FAQ */
+.faq-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-header h1 {
+    font-size: 2em;
+    color: #0275d8;
+    margin: 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+.faq-item h3:after {
+    content: "+";
+    font-weight: bold;
+    color: #0275d8;
+}
+
+.faq-item.active h3:after {
+    content: "-";
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #555;
+    font-size: 1em;
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 120px;
+}
+
+
+/* Estilos específicos para a seção de promoções */
+
+.promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.promo-section .promo-container {
+    max-width: 1000px;
+    width: 90%;
+    text-align: center;
+}
+
+.promo-section .promo-container h2 {
+    font-size: 2.2em;
+    color: #0275d8;
+    margin-bottom: 10px;
+}
+
+.promo-section .promo-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.promo-section .promo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.promo-section .promo-card:hover {
+    transform: translateY(-10px);
+}
+
+.promo-section .promo-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+}
+
+.promo-section .promo-card p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.promo-section .promo-price {
+    font-size: 1.3em;
+    color: #e63946;
+    font-weight: bold;
+    display: block;
+    margin: 15px 0;
+}
+
+.promo-section .promo-btn {
+    background-color: #0275d8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.promo-section .promo-btn:hover {
+    background-color: #025fa1;
+}
+
+
+/* Estilos para a seção de blog, aplicados apenas à classe .blog-section */
+.blog-section {
+    width: 80%; /* Define 80% da largura da página */
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.blog-section h2 {
+    font-size: 2.2em;
+    color: #0275d8;
+    margin-bottom: 10px;
+}
+
+.blog-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Container de artigos */
+.blog-section .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cartões de artigos */
+.blog-section .blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.blog-section .blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-section .blog-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0;
+}
+
+.blog-section .blog-card p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0 20px;
+    line-height: 1.6;
+}
+
+.blog-section .blog-btn {
+    background-color: #0275d8;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.blog-section .blog-btn:hover {
+    background-color: #025fa1;
+}
+
+
+/* Estilos para a seção de formulário de contato */
+.contact-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    color: #0275d8;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos para o formulário */
+.contact-form label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #0275d8;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #025fa1;
+}
+
+
+/* Estilos para a seção de redes sociais e newsletter */
+.social-newsletter-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.social-newsletter-section h2 {
+    font-size: 2em;
+    color: #0275d8;
+    margin-bottom: 10px;
+}
+
+.social-newsletter-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    color: #0275d8;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #025fa1;
+}
+
+/* Estilos para o formulário de newsletter */
+.newsletter-form label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.newsletter-btn {
+    display: inline-block;
+    background-color: #0275d8;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-btn:hover {
+    background-color: #025fa1;
+}
+
+
+/* Estilos para a seção de Chamada para Ação (CTA) */
+.cta-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    color: #0275d8;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões de CTA */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    background-color: #0275d8;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #025fa1;
+}
+
+@media (max-width: 600px) {
+    .cta-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}

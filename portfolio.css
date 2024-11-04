@@ -1,0 +1,230 @@
+.portfolio {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project p {
+    font-size: 1em;
+    color: #666;
+}
+
+body {
+    animation: bgChange 5s infinite;
+}
+
+@keyframes bgChange {
+    0% { background-color: #e0debe; }
+    33% { background-color: #a9d1b0; }
+    66% { background-color: #cad2f7; }
+    100% { background-color: #d8b3ab; }
+}
+
+
+
+.testimonial1 {
+    display: flex;
+    gap: 10px; /* Espaçamento entre as imagens */
+    justify-content: center;
+    padding: 10px;
+}
+
+.testimonial {
+    width: 1px; /* Tamanho da imagem em formato quadrado */
+    height: 1px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+
+h1 {
+    text-align: center;
+    color: #1b1c33d5;
+    
+}
+
+h2 {
+    text-align: center;
+    color: #030303;
+    background-color: #f9f9f9;
+}
+
+p {
+    text-align: center;
+    color: #141212;
+    
+}
+
+
+/* Estilo básico da barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 15px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de cor ao passar o cursor */
+nav a:hover {
+    color: #FFD700; /* Cor do texto ao passar o cursor */
+}
+
+/* Animação do sublinhado */
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Posicionamento abaixo do texto */
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700; /* Cor da linha de destaque */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de expansão da linha ao passar o cursor */
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Estilos para a seção de Redes Sociais e Newsletter */
+.social-newsletter-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.social-newsletter-section h2 {
+    font-size: 2em;
+    color: #0275d8;
+    margin-bottom: 10px;
+}
+
+.social-newsletter-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o formulário de newsletter */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #fa8080;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 70%;
+}
+
+.subscribe-btn {
+    background-color: #0275d8;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #025fa1;
+}
+
+/* Estilos para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1em;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.instagram { background-color: #E4405F; }
+.social-icon.twitter { background-color: #1DA1F2; }
+.social-icon.linkedin { background-color: #0077B5; }
+
+.social-icon:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,131 @@
+/* Estilos Gerais da Página de Serviços */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+
+
+
+.image-gallery {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-image {
+    width: 500px; /* Tamanho da imagem em formato quadrado */
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+body {
+    animation: bgChange 5s infinite;
+}
+
+@keyframes bgChange {
+    0% { background-color: #111d16; }
+    33% { background-color: #1c271e; }
+    100% { background-color: #121310; }
+}
+
+h2 {
+    text-align: center;
+    color: #fdfbfb;
+}
+
+p {
+    text-align: center;
+    color: #f3e4e4;
+}
+
+
+/* Estilo básico da barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 15px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de cor ao passar o cursor */
+nav a:hover {
+    color: #FFD700; /* Cor do texto ao passar o cursor */
+}
+
+/* Animação do sublinhado */
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Posicionamento abaixo do texto */
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700; /* Cor da linha de destaque */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de expansão da linha ao passar o cursor */
+nav a:hover::after {
+    transform: scaleX(1);
+}

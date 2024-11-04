@@ -1,0 +1,108 @@
+/* Estilos Gerais da Página de Depoimentos */
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.testimonial-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.testimonial-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+p {
+    text-align: center;
+    color: #f3e4e4;
+    background-color: #666;
+}
+
+body {
+    animation: bgChange 5s infinite;
+}
+
+@keyframes bgChange {
+    0% { background-color: #cfcf22; }
+    33% { background-color: #c7f5d2; }
+    66% { background-color: #2441c5; }
+    100% { background-color: #e23613; }
+}
+
+
+/* Estilo básico da barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 15px;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de cor ao passar o cursor */
+nav a:hover {
+    color: #FFD700; /* Cor do texto ao passar o cursor */
+}
+
+/* Animação do sublinhado */
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Posicionamento abaixo do texto */
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700; /* Cor da linha de destaque */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de expansão da linha ao passar o cursor */
+nav a:hover::after {
+    transform: scaleX(1);
+}
